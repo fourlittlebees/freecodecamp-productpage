@@ -1,0 +1,210 @@
+:root {
+    --color-bg: #00808030;
+    --color-text-main: #5e2197ff;
+    --color-primary: #a88facff;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    
+    background-color: var(--color-bg);
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background: white;
+    }
+  }
+  
+  .p-text {
+    font-family: 'Open Sans Condensed';
+    
+  }
+  
+  .headings {
+    font-family: 'Original Surfer';
+    color: #5e2197ff;
+  }
+  
+  h1 {
+    font-family: 'Original Surfer';
+    font-size: 30px;
+    color: whitesmoke;
+  }
+  
+  h2 {
+    font-family: 'Original Surfer';
+    font-size: 24px;
+    color: #5e2197ff;
+  }
+  
+  h3 {
+    font-family: 'Original Surfer';
+    font-size: 24px;
+    color: #5e2197ff;
+  }
+  
+  h4 {
+    font-family: 'Original Surfer';
+    font-size: 20px;
+    color: #5e2197ff;
+  }
+  
+  h5 {
+    font-family: 'Original Surfer';
+    font-size: 16px;
+    color: #5e2197ff;
+  }
+  
+  h6{
+    font-family: 'Original Surfer';
+    font-size: 12px;
+    color: #5e2197ff;
+  }
+  
+  p {
+    font-family: 'Open Sans Condensed';
+    color: #000000;
+  }
+  
+  a:link {
+    /*font-family: 'OpenSansCondensed', sans-serif;
+    font-style: strong; */
+    color: #008080;
+  }
+  
+  a:visited {
+    font-family: 'OpenSansCondensed', sans-serif;
+    color: #5e2197ff;
+  }
+  
+  a:hover {
+    font-family: 'OpenSansCondensed', sans-serif;
+    color: #FFFFFF;
+  }
+
+  /* div.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "aside main main"
+      "footer footer footer"; 
+      
+  } */
+
+  header {
+      background: var(--color-primary);
+      grid-area: header;
+      padding: 1rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin: 0;
+  }
+  header > img {
+      max-width: 15%;
+  }
+
+  header > h1 {
+      justify-self: center; 
+      align-self: center;
+      margin-right: 15%;
+  }
+
+  nav {
+      font-family: 'Original Surfer';
+      background: teal;
+      /* display: flex; */
+      padding: 0.5rem;  
+      margin-left: 25%;
+      position: relative;
+    
+  }
+
+  nav > a:link {
+      color: white;
+      font-family: 'Original Surfer';
+      padding: 2rem;
+      text-decoration: none;
+  }
+
+  nav > a:visited {
+    color: white;
+    font-family: 'Original Surfer';
+    padding: 2rem;
+    text-decoration: none;
+}
+
+  nav > a:hover{
+    color: rgb(194, 190, 190);
+    font-family: 'Original Surfer';
+    padding: 2rem;
+}
+main {
+    /* grid-area: main;
+    grid-column: 2 / 3; */
+    background: var(--color-primary);
+    overflow-y: scroll;
+}
+
+  /* aside {
+      grid-area: aside;
+      grid-column: 1 / 2;
+      grid-row: 2 / 4; 
+      padding: 1.5rem;
+      background: var(--color-bg);
+  } */
+
+#bio {
+    display: flex;
+    padding: 1.5rem;
+}
+
+#bio > #about {
+    flex-shrink: 1;
+}
+ 
+#bio > video {
+    flex: auto;
+}
+
+  section {
+      /*grid-area: main;
+      grid-column: 2 / 3; */
+      display: flex;
+      background: white;
+      padding: 1.5rem;
+  }
+
+  article {
+      font-family: 'Open Sans Condensed';
+  }
+
+  article > ul > li {
+      font-family: 'Open Sans Condensed';
+  }
+
+  #pricing-blocks {
+      display: flex;
+  }
+
+
+  #pricing-blocks > article {
+      flex: 1;
+  }
+
+  footer {
+      background: var(--color-primary);
+      /* grid-area: footer;
+      grid-column: 1 / -1; */
+  }
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+  }
+  [hidden] {
+    display: none !important;
+  }
